@@ -1,0 +1,68 @@
+
+// Sample programs
+var X : int := 4 + (6 * 2);
+print X;
+
+print("\n****************\n");
+
+var nTimes : int := 0;
+print "How many times? ";
+read nTimes;
+var x : int;
+for x in 0..nTimes-1 do 
+    print x;
+    print " : Hello, World!\n";
+end for;
+assert (x = nTimes);
+
+print("\n****************\n");
+
+print "Give a number ";
+var n : int;
+read n;
+var v : int := 1;
+var i : int;
+for i in 1..n do 
+    v := v * i;
+end for;
+print "The result is: ";
+print v;
+print("\n");
+
+print("\n****************\n");
+// string concatenation
+
+var hello : string := "Hello,";
+var me : string := " is it me ";
+var you : string := "you're looking for?\n";
+var text : string := hello + me + you;
+print text; 
+
+print("\n****************\n");
+
+// assert for string
+assert (hello = me);
+assert (me < you);
+
+// assert for bool
+var s : int := 2;
+var u : int := 3;
+assert ((s = 2) ! (u = 2));
+assert ((s = 2) & (u = 3));
+
+print("\n****************\n");
+// math
+print 7 + 3 * (10 / (12 / (3 + 1) - 1)) / (2 + 3) - 5 - 3 + (8);
+var a : int := 88 / 4;
+var b : int := 2;
+var c : int := 5;
+print a + b + c / (a * b) + (c / 2) + b;
+
+print("\n****************\n");
+
+print "Tell me something: ";
+var something : string;
+read something;
+print "You told: " + something;
+
+print("\n****************\n");
